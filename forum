@@ -1,0 +1,245 @@
+[sc=bg]
+[sc=header] [sc=header icon][img]https://i.pinimg.com/736x/4d/64/98/4d6498d05cc510072b7a70d9360c451e.jpg[/img][/sc] [sc=header banner]title goes here![/sc]
+[/sc]
+[sc=main][sc=content][sc=tabbed_interface vertical]
+[ul]
+[li]Title 1[/li]
+[li]Title 2[/li]
+[li]Title 3[/li]
+[li]Title 4[/li]
+[li]Title 5[/li]
+[li]Title 6[/li]
+[/ul][
+][sc=tab]contents 1[/sc][
+
+][sc=tab-active]"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."[/sc][
+
+][sc=tab]contents 3[/sc][
+
+][sc=tab]contents 3[/sc][
+
+][sc=tab]contents 3[/sc][
+
+][sc=tab]contents 3[/sc][/sc][sc=sidebar image][img]https://64.media.tumblr.com/93571728e63120dcf007ff33011bf65e/5b728a169feee62d-47/s400x600/30699f50f1ce708db14423d8c2f3cabd82a61838.png[/img][/sc]
+[sc=footer]test[/sc][sc=credit][pit="[img]https://i.postimg.cc/8CHSGQNG/dollop.gif[/img]"]code by [url=https://pfq.link/@J3dF]union[/url], for [url=https://pfq.link/@yQT]ampharos'[/url] use only
+- sprite by union
+- background by [url=https://www.instagram.com/p/DNEj_UJzMVZ]umeography[/url][/pit][/sc]
+[/sc][/sc]
+[/sc]
+
+[style]
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+}
+
+.bg {
+    margin: auto;
+    background-image: url("https://64.media.tumblr.com/08ae5e3640b1bb27f884b064b5cc4fd9/49808547552e0367-89/s1280x1920/39f0f5ae909e7e16fc0e4339464037541d271601.jpg");
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin-top: -15px;
+}
+
+.header.icon {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    margin: 5px;
+}
+
+.header.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+
+.header.banner {
+    flex: 1;
+    min-height: 45px;
+    background: #ffffff90;
+    border-radius: 0px;
+    padding: 5px;
+    margin: 107px 5px 0px 0px;
+    box-sizing: border-box;
+    color: #000;
+    border: 1px solid #000;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.main {
+    gap: 5px;
+}
+
+.content {
+    flex: 1;
+    background: #3870BB90;
+    padding: 2px;
+    min-height: 200px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid #000;
+    margin-top: -15px;
+}
+
+.tabbed_interface {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0px;
+    justify-content: center; 
+        margin-bottom: 100px;
+}
+
+.tabbed_interface>ul {
+background: none;
+    width: auto;
+    margin: 0px 5px 5px 0;
+    position: relative;
+    background: none;
+}
+
+.tabbed_interface>ul li {
+font-family: 'Montserrat';
+transition: .3s;
+cursor: pointer;
+width: 150px;
+margin-top: 5px;
+padding: 5px;
+border-radius: 0px;
+border: 1px solid #000;
+color: #000;
+background: #ffffff90;
+font-size: 14px;
+}
+
+.tabbed_interface>ul>li.tab-active {
+color: #fff;
+background-color: #00000090;
+border: 1px solid #000;
+}
+
+.tabbed_interface>div  {
+font-family: 'Montserrat';
+text-align: left;
+margin: 5px;
+box-shadow: 0px 0px 3px #00000000;
+border: 1px solid #000;
+background-color: #ffffff90;
+color: #000;
+font-size: 14px;
+border-radius: 0px;
+    width: 390px;
+    min-height: 300px;
+    flex: none;
+}
+
+.tabbed_interface>div::-webkit-scrollbar {
+      width: 0;
+      /* remove scrollbar space */
+      background: transparent;
+      /* to make scrollbar invisible */
+    }
+
+.tabbed_interface>div::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+
+.sidebar {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar.image {
+width: 150px;
+position: absolute;
+bottom: 80px;
+right: 20px;
+margin-right: 10px;
+}
+
+.sidebar.image img {
+    width: 100%;
+}
+
+.footer {
+    text-align:center;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: #000;
+    border: 1px solid #000;
+    background: #ffffff90;
+    width: 93%;
+    margin: 5px;
+}
+
+
+.footer img{
+    max-width: auto;
+    display: block;
+    margin: auto;
+}
+.credit {
+margin-right: 5px;
+margin-bottom: -50px;
+text-align: right;
+user-select: none;
+position: absolute;
+bottom: 100px;
+right: 10px;
+
+width: auto;
+height: auto;
+image-rendering: pixelated;
+ 
+    div.tooltip_content {
+    font-family: 'Montserrat';
+    width: 300px;
+        bottom: 0px;
+        right: 40px;
+        margin-left: 10px;
+        font-size: 14px;
+        padding: 5px;
+        border-radius: 0px;
+        border: 2px solid #000;
+        background-color: #00000090;
+        color: #fff;
+        text-align: left;
+        a {
+        color: #fff;
+        }
+    }
+    .bbcode_tooltip {
+    border-bottom: none;
+    }
+}
+
+@media (max-width: 800px) {
+.tabbed_interface>div  {
+width: 270px;
+padding: 5px;
+}
+
+.tabbed_interface>ul {
+width: 100px;
+}
+
+.sidebar.image {
+width: 120px;
+right: 10px;
+}
+}
+
+
+[/style]
